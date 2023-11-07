@@ -6,7 +6,7 @@ title = My Application
 # (str) Package name
 package.name = myapp
 
-# (str) Package domain (needed for android/ios packaging)
+# (str) Package domains (needed for android/ios packaging)
 package.domain = org.test
 
 # (str) Source code where the main.py live
