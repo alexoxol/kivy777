@@ -35,7 +35,7 @@ version = 0.1
 # version.regex = __version__ = ['"](.*)['"]
 # version.filename = %(source.dir)s/main.py
 
-# (list) Application requirements
+# (list) Application requirements::
 # comma separated e.g. requirements = sqlite3,kivy
 # requirements = python3==3.7.6,hostpython3==3.7.6,kivy,pillow
 requirements = python3==3.7.6,hostpython3==3.7.6,kivy,pillow
