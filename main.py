@@ -1,15 +1,22 @@
 from kivy.app import App
 from kivy.lang import Builder
+from kivy.uix.screenmanager import Screen, ScreenManager
 from kivy.uix.widget import Widget
 
-Builder.load_file('kv_box.kv')
+# Определяем наши окна
+class FirstWindow(Screen):
+    pass
 
-class MyLayout(Widget):
-    def __init__(self, **kwargs):
-        super(MyLayout, self).__init__(**kwargs)
+class SecondWindow(Screen):
+    pass
+
+class WindowManager(ScreenManager):
+    pass
+
+kv = Builder.load_file('kv_MultipleWindows.kv')
 
 class MyApp(App):
     def build(self):
-        return MyLayout()
+        return kv
 
 MyApp().run()
